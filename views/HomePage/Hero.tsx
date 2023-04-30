@@ -20,7 +20,7 @@ export default function Hero() {
         </Description>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
+            Se inscreva para saber mais <span>&rarr;</span>
           </Button>
         </CustomButtonGroup>
       </Contents>
