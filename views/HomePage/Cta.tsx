@@ -6,9 +6,12 @@ import ButtonGroup from 'components/ButtonGroup';
 import Container from 'components/Container';
 import OverTitle from 'components/OverTitle';
 import SectionTitle from 'components/SectionTitle';
+import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
 
 export default function Cta() {
+  const { setIsModalOpened } = useNewsletterModalContext();
+
   return (
     <CtaWrapper>
       <Container>
@@ -18,11 +21,9 @@ export default function Cta() {
             Entre em contato e solicite um orçamento. Não deixe para depois!
           </Description>
           <ButtonGroup>
-            <NextLink href="#early-access" passHref>
-              <Button>
-                Solicitar agora
-              </Button>
-            </NextLink>
+          <Button onClick={() => setIsModalOpened(true)}>
+              Solicitar agora
+            </Button>
           </ButtonGroup>
         </Stack>
       </Container>
