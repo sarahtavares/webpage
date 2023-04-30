@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useRef, useState } from 'react';
@@ -180,9 +179,4 @@ const Content = styled(Container)`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-`;
-
-const ColorSwitcherContainer = styled.div`
-  width: 4rem;
-  margin: 0 1rem;
 `;

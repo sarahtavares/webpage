@@ -16,7 +16,7 @@ export default function Hero() {
         <CustomOverTitle>a solução personalizada que sua empresa precisa</CustomOverTitle>
         <Heading>Simplifique seu negócio</Heading>
         <Description>
-          Contrate a solução personalizada para o seu negócio e ganhe mais produtividade!
+          Contrate a solução personalizada para a sua empresa e ganhe mais produtividade!
         </Description>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>
