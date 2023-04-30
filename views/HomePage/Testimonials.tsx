@@ -10,31 +10,13 @@ import { media } from 'utils/media';
 
 const TESTIMONIALS = [
   {
-    companyLogoUrl: '/testimonials/company-logo-1.svg',
-    content: `Really good. I am so pleased with this product. I didn't even need training.`,
-    author: {
-      name: 'Clyde Edwards',
-      title: 'Very Serious Man',
-      avatarUrl: '/testimonials/author-photo-1.jpeg',
-    },
+    content: `Precisando de um site para sua empresa? A gente desenvolve o site do jeito que você desejar e deixa ele no ar rapidinho para você atrair mais clientes.`,
   },
   {
-    companyLogoUrl: '/testimonials/company-logo-2.svg',
-    content: `It's really wonderful. I use saas product often. Thank You! Saas product has really helped our business.`,
-    author: {
-      name: 'Jimmy Hunter',
-      title: 'Sigma Male University Graduate',
-      avatarUrl: '/testimonials/author-photo-2.jpeg',
-    },
+    content: `Precisa de um dashboard com dados em powerBI, Excel ou outra solução ainda para análise de dados? Fazemos também! Temos templates para ajudá-lo com essas análises.`,
   },
   {
-    companyLogoUrl: '/testimonials/company-logo-3.svg',
-    content: `Since I invested in saas product I made over 100,000 dollars profits. It really saves me time and effort. saas product is exactly what our business has been lacking.`,
-    author: {
-      name: 'Marjorie Morgan',
-      title: 'Chief Chad Officer',
-      avatarUrl: '/testimonials/author-photo-3.jpeg',
-    },
+    content: `Quer fazer uma gestão mais eficaz do seu negócio? A gente cria um sistema com a cara do seu negócio para controle de dados, clientes, pagamentos, dentre outros.`,
   },
 ];
 
@@ -47,22 +29,7 @@ export default function Testimonials() {
           {TESTIMONIALS.map((singleTestimonial, idx) => (
             <SwiperSlide key={idx}>
               <TestimonialCard>
-                <NextImage
-                  src={singleTestimonial.companyLogoUrl}
-                  alt={`${singleTestimonial.author.name}'s company logo`}
-                  width={200}
-                  height={40}
-                />
-                <Content>“{singleTestimonial.content}”</Content>
-                <AuthorContainer>
-                  <AuthorImageContainer>
-                    <NextImage src={singleTestimonial.author.avatarUrl} alt={singleTestimonial.author.name} width={48} height={48} />
-                  </AuthorImageContainer>
-                  <AuthorContent>
-                    <AuthorName>{singleTestimonial.author.name}</AuthorName>
-                    <AuthorTitle>{singleTestimonial.author.title}</AuthorTitle>
-                  </AuthorContent>
-                </AuthorContainer>
+                <Content>{singleTestimonial.content}</Content>
               </TestimonialCard>
             </SwiperSlide>
           ))}
